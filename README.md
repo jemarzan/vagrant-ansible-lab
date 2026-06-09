@@ -70,16 +70,16 @@ ansible all -m ping
 ![ping](screenshots/1_ping.PNG)
 
 ### Playbook Run — `ansible-playbook ~/ansible/site.yml`
-![playbook](screenshots/2_playbook.png)
+![playbook](screenshots/2_playbook.PNG)
 
 ### Ad-hoc — `ansible managed_nodes -m shell -a "uptime"`
-![uptime](screenshots/3_uptime.png)
+![uptime](screenshots/3_uptime.PNG)
 
 ### Ad-hoc — `ansible managed_nodes -m shell -a "df -h"`
-![df-h](screenshots/4_df-h.png)
+![df-h](screenshots/4_df-h.PNG)
 
 ### Ad-hoc — `ansible pc1 -m shell -a "hostname -I"`
-![hostname](screenshots/5_hostname.png)
+![hostname](screenshots/5_hostname.PNG)
 
 ---
 
