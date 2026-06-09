@@ -1,0 +1,24 @@
+---
+# ──────────────────────────────────────────────────────────────
+#  site.yml  –  Master playbook
+#  Runs the "common" role on all managed nodes (pc1 & pc2).
+#  Add more roles / plays below as your lab grows.
+# ──────────────────────────────────────────────────────────────
+
+- name: Configure all managed nodes
+  hosts: managed_nodes
+  gather_facts: true
+  become: true
+
+  roles:
+    - common
+
+# ── Example: add a second play targeting only pc1 ────────────
+# - name: Extra config for pc1
+#   hosts: pc1
+#   become: true
+#   tasks:
+#     - name: Install nginx
+#       ansible.builtin.apt:
+#         name: nginx
+#         state: present
