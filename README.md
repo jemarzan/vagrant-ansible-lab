@@ -67,7 +67,7 @@ ansible all -m ping
 ## 📸 Screenshots
 
 ### Connectivity Check — `ansible all -m ping`
-![ping](screenshots/1_ping.png)
+![ping](screenshots/1_ping.PNG)
 
 ### Playbook Run — `ansible-playbook ~/ansible/site.yml`
 ![playbook](screenshots/2_playbook.png)
